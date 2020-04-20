@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kdrtut.runners.CukeRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="Ks-MacBook-Pro" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+Failed scenarios:
+file:///Users/khadeer/IdeaProjects/seleniumtut/src/test/resources/features/LaunchGoogle.feature:3# Verify Google Page Successful Login
+
+1 Scenarios (1 failed)
+3 Steps (1 failed, 2 skipped)
+0m0.093s
+
+
+java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:847)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:134)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at com.kdrtut.base.DriverInit.<init>(DriverInit.java:13)
+	at com.kdrtut.base.DriverInit.getInstance(DriverInit.java:25)
+	at com.kdrtut.stepdefs.StepdefIntegration.browser_is_opened(StepdefIntegration.java:15)
+	at ✽.browser is opened(file:///Users/khadeer/IdeaProjects/seleniumtut/src/test/resources/features/LaunchGoogle.feature:4)
+
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
